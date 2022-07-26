@@ -16,6 +16,30 @@ united_kingdom = [
   }
 ]
 
+# print(united_kingdom)
+
 # Change the capital of Wales to Cardiff
-united_kingdom[1]["capital"] = "Cardiff"
-print(united_kingdom[1])
+united_kingdom[1]["capital"]= "Cardiff"
+# print(united_kingdom)
+
+# Create a Northern Ireland entry and add it to the existing dictionary list
+NI = {
+    "name": "Northern Ireland",
+    "population": 1811000,
+    "capital": "Belfast",
+  }
+
+united_kingdom.append(NI)
+# print()
+# print()
+
+# print(united_kingdom)
+# country = 0
+
+poptotal = 0
+
+for country in united_kingdom:
+    print(country["name"])
+    poptotal = (country["population"]) + poptotal
+    
+print(f"Total Population is {poptotal}")
