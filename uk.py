@@ -15,3 +15,7 @@ united_kingdom = [
     "capital": "London"
   }
 ]
+
+# Change the capital of Wales to Cardiff
+united_kingdom[1]["capital"] = "Cardiff"
+print(united_kingdom[1])
